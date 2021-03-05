@@ -1,3 +1,4 @@
+import 'package:familyapp/routes/application.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,9 @@ class Login extends StatelessWidget{
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                  Text("登录界面"),
-                 Container(width: _size.width/2 ,child: RaisedButton(onPressed: (){},child: Text("登录"),color: Colors.red,)),
+                 Container(width: _size.width/2 ,child: RaisedButton(onPressed: (){
+                   Application.router.navigateTo(context, '/register');
+                 },child: Text("登录"),color: Colors.red,)),
                  Row(mainAxisAlignment: MainAxisAlignment.center,children: [
                         Container(width: _size.width/5,height: 1,color: Colors.white,),
                         Text("GIF"),

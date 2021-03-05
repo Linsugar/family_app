@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'routehander.dart';
 class Routes{
   static String chatchild = '/chatchild';
+  static String register = '/register';
 
   static void configureRoutes(FluroRouter router){
     router.notFoundHandler = Handler(
@@ -12,6 +13,7 @@ class Routes{
       }
     );
     router.define(chatchild, handler: chatchildHander);
+    router.define(register, handler: registerHander);
   }
 
 }
