@@ -45,7 +45,7 @@ class FamilyState extends State<Family>{
               ),)
               ],
             ),),
-            Flexible(flex: 7,child: Container(color: Colors.green,),),
+            Flexible(flex: 7,child: Container(padding: EdgeInsets.only(left: 30,right: 30),child: ClipRRect(borderRadius: BorderRadius.circular(30),child: Container(color: Colors.green,))),),
           ],
         ),
       ),
