@@ -1,4 +1,3 @@
-import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +35,12 @@ class FamilyState extends State<Family>{
                 child: ListView.separated(scrollDirection: Axis.horizontal,itemCount: 20,separatorBuilder: (context,index){
                   return SizedBox(width: 10,);
                 },itemBuilder: (context,index){
-                    return BackdropFilter(filter: ImageFilter.blur(sigmaX: 5.0,sigmaY: 5.0),child: Container(width: 200,height: 100,color: Colors.blue,child: Text("1323"),));
+                    return Container(width: 200,height: 100,color: Colors.blue,child: Column(
+                      children: [
+                        Row(children: [Icon(Icons.account_circle),Text("")],),
+                        Row(),
+                      ],
+                    ),);
                 },),
               ),)
               ],
